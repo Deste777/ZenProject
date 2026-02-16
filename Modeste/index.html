@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion</title>
+  <link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("../Pictures/h4.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .navbar,.btn {
+      background-color: #8825f9;
+
+    }
+
+    main {
+      backdrop-filter: blur(10px);
+      width: 40% !important;
+    }
+
+    @media (max-width:768px) {
+      main {
+        backdrop-filter: blur(10px);
+        width: 100% !important;
+      }
+    }
+
+    .navbar-brand {
+      margin-left: 15px !important;
+    }
+    select:hover{
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container p-4 rounded shadow-lg">
+    <section class="row">
+      <form class="col">
+        <div class="row d-flex flex-column g-3">
+          <h3 class="navbar rounded">
+            <a class=" navbar-brand fs-3 text-white" href="#"><span
+                class="bg-white p-1 text-black fw-bold rounded">MS</span>Can</a>
+          </h3>
+          <div class="col">
+            <label for="inputEmail4" class="form-label text-white ">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" required>
+          </div>
+          <div class="col">
+            <label for="inputPassword4" class="form-label text-white">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" required>
+          </div>
+
+          <div class="col">
+            <label for="inputState" class="form-label text-white">State</label>
+            <select id="inputState" class="form-select" required>
+              <option selected>Sélectionner..</option>
+              <option>Candidat</option>
+              <option>Administrateur</option>
+            </select>
+          </div>
+          <div class="col-12 offset-sm-9">
+            <button type="submit" class="btn text-white" id="connexion">Connexion</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+<script>
+  var bouton = document.getElementById("connexion");
+  bouton.addEventListener("click", function(){
+    var slt = document.getElementById("inputState").value;
+    if(slt === "Administrateur"){
+    window.open('administrateur.html')
+    }
+    else if(slt === "Candidat"){
+      window.open('candidat.html')
+    }
+  })
+
+  
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

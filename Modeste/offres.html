@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>candidature</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+    <style>
+        img {
+
+            aspect-ratio: 6/5;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .navbar {
+            background-color: #8825f9;
+        }
+
+        .btn {
+            color: white !important;
+            background-color: #8825e9 !important;
+            border: none;
+            transition: all 0.4s ease;
+        }
+
+        .btn:hover {
+            background-color: #8825f9 !important;
+            opacity: 100%;
+        }
+
+        .dropdown-menu {
+            position: absolute !important;
+            left: -50px !important;
+        }
+
+        @media (max-width:768px) {
+            .dropdown-menu {
+                position: absolute !important;
+                left: -10px !important;
+            }
+
+            .bien {
+                margin-top: 15% !important;
+            }
+
+        }
+
+        .nav-link:hover {
+            color: #fff !important;
+        }
+
+        .navbar-brand {
+            margin-left: 15px !important;
+        }
+
+        .bien {
+            margin-top: 10%;
+        }
+
+        .clique {
+            background-color: rgb(31, 104, 3) !important;
+        }
+
+        .clique:hover {
+            background-color: rgb(31, 104, 3) !important;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    ...
+  </div>
+</div> -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-opacity-10">
+            <div class="container-fluid">
+                <a class=" navbar-brand fs-3 text-white" href="#"><span
+                        class="bg-white p-1 text-black fw-bold rounded">MS</span>Can</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon border-white" style="color: white !important;"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50" aria-current="page"
+                                href="administrateur.html#liste">Liste</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="btn p-0 my-sm-1 my-md-0 mx-md-1">
+                                <a type="button" class="btn dropdown-toggle active" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Gestion
+                                </a>
+                                <ul class="dropdown-menu menu2">
+                                    <a class="dropdown-item" href="administrateur.html#gestion">Gestion des
+                                        candidats</a>
+                                    <li><a class="dropdown-item" href="#offre">Gestion des offres</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="btn-group">
+                                <a type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Mon compte
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Données</a></li>
+                                    <li><a class="dropdown-item" href="#">changer de compte</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item text-danger" href="#">Se Déconnecter</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="container-md bien d-flex justify-content-between bg-body-secondary p-3 mb-2 rounded">
+        <h3 class="fw-bold">
+            Gestion des offres
+        </h3>
+        <button class="btn " data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Ajouter une offre</button>
+    </section>
+    <div class="container-md" id="offre">
+        <main class="row gx-5 gy-4">
+            <section class="col-sm-6 col-md-4">
+                <div class="card shadow-lg">
+                    <img src="../Pictures/h6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.
+                        </p>
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="btn btn-secondary" style="background-color: #aa1 !important;"
+                                data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Modifier</button>
+                            <button type="submit" class="btn " style="background-color: #f11 !important;"
+                                data-bs-target="#exampleModal" data-bs-toggle="modal">Supprimer</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="col-sm-6 col-md-4">
+                <div class="card shadow-lg">
+                    <img src="../Pictures/w6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SAGS</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.
+                        </p>
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="btn btn-secondary" style="background-color: #aa1 !important;"
+                                data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Modifier</button>
+                            <button type="submit" class="btn " style="background-color: #f11 !important;"
+                                data-bs-target="#exampleModal" data-bs-toggle="modal">Supprimer</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="col-sm-6 col-md-4">
+                <div class="card shadow-lg">
+                    <img src="../Pictures/h6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">AGRO-Bénin</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.
+                        </p>
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="btn btn-secondary" style="background-color: #aa1 !important;"
+                                data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Modifier</button>
+                            <button type="submit" class="btn " style="background-color: #f11 !important;"
+                                data-bs-target="#exampleModal" data-bs-toggle="modal">Supprimer</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="col-sm-6 col-md-4">
+                <div class="card shadow-lg">
+                    <img src="../Pictures/h4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.
+                        </p>
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="btn btn-secondary" style="background-color: #aa1 !important;"
+                                data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Modifier</button>
+                            <button type="submit" class="btn " style="background-color: #f11 !important;"
+                                data-bs-target="#exampleModal" data-bs-toggle="modal">Supprimer</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="col-sm-6 col-md-4">
+                <div class="card shadow-lg">
+                    <img src="../Pictures/h3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.
+                        </p>
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="btn btn-secondary" style="background-color: #aa1 !important;"
+                                data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Modifier</button>
+                            <button type="button" class="btn " style="background-color: #f11 !important;"
+                                data-bs-target="#exampleModal" data-bs-toggle="modal">Supprimer</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="col-sm-6 col-md-4">
+                <div class="card shadow-lg">
+                    <img src="../Pictures/h4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.
+                        </p>
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="btn btn-secondary" style="background-color: #aa1 !important;"
+                                data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Modifier</button>
+                            <button type="button" class="btn " style="background-color: #f11 !important;"
+                                data-bs-target="#exampleModal" data-bs-toggle="modal">Supprimer</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- L'extrait suivant pour gérer les modals -->
+
+      
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Supprimer une offre</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                      <div class="modal-body fs-4 fw-semibold">
+                    L'offre sélectionné a été supprimé !
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" style="background-color: #aaa !important;"
+                        data-bs-dismiss="modal">Fermer</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Ajout ou Modification</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="image" class="form-label fw-semibold">Sélectionner une image : </label>
+                            <input type="file" class="form-control" id="image" aria-describedby="emailHelp">
+                            
+                        <div class="mb-3">
+                            <label for="description" class="form-label fw-semibold">Briève description :</label>
+                            <textarea  class="form-control" id="description"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" style="background-color: #aaa !important;"
+                            data-bs-dismiss="modal">Fermer</button>
+                        <button class="btn btn-primary" data-bs-dismiss="modal">Soumettre</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="bg-secondary-subtle container-fluid mt-5">
+        <section class="row p-3">
+            <div class="col-md-4 d-flex flex-column justify-content-center">
+                <a class="navbar-brand fs-3 text-white p-2 rounded"
+                    style="background-color: #8825f9; max-width: fit-content;" href="#"><span
+                        class="bg-white p-1 text-black fw-bold rounded">MS</span>Can</a>
+            </div>
+            <div class="col-md-4">
+                <ul>
+                    <li>Premier élément</li>
+                    <li>Deuxième élément</li>
+                    <li>Troisième élément</li>
+                    <li>Quatrième élément</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Commentaires</h3>
+                <form class="d-flex">
+                    <textarea class="form-control me-5" style="height: 15px;"
+                        placeholder="Votre commentaire"></textarea>
+                    <button class="btn btn-outline-success" type="submit">Soumettre</button>
+                </form>
+            </div>
+        </section>
+    </footer>
+    <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

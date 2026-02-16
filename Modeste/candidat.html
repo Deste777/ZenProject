@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>candidature</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <style>
+        img {
+
+            aspect-ratio: 6/5;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .navbar {
+            background-color: #8825f9;
+        }
+
+        .btn {
+            color: white !important;
+            background-color: #8825e9 !important;
+            border: none;
+            transition: all 0.4s ease;
+        }
+
+        .btn:hover {
+            background-color: #8825f9 !important;
+            opacity: 100%;
+        }
+
+        .dropdown-menu {
+            position: absolute !important;
+            left: -50px !important;
+        }
+
+        @media (max-width:768px) {
+            .dropdown-menu {
+                position: absolute !important;
+                left: -10px !important;
+            }
+
+            .bien {
+                margin-top: 15% !important;
+            }
+
+        }
+
+        .nav-link:hover {
+            color: #fff !important;
+        }
+
+        .navbar-brand {
+            margin-left: 15px !important;
+        }
+
+        .bien {
+            margin-top: 10%;
+        }
+
+        .clique {
+            background-color: rgb(31, 104, 3) !important;
+        }
+
+        .clique:hover {
+            background-color: rgb(31, 104, 3) !important;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    ...
+  </div>
+</div> -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-opacity-10">
+            <div class="container-fluid">
+                <a class=" navbar-brand fs-3 text-white" href="#"><span
+                        class="bg-white p-1 text-black fw-bold rounded">MS</span>Can</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon border-white" style="color: white !important;"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50" aria-current="page" href="#">Acceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50" href="#offre">Offres</a>
+                        </li>
+                        <li>
+                            <div class="btn-group">
+                                <a type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Mon compte
+                                </a>
+                                <ul class="dropdown-menu" style="transition: display 0.5s ease;">
+                                    <li><a class="dropdown-item" href="#">Données</a></li>
+                                    <li><a class="dropdown-item" href="#">changer de compte</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item text-danger" href="index.html">Se Déconnecter</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="container-md bien">
+        <h3 class="fw-bold">
+            Bienvenu(e) sur MSCan
+        </h3>
+        <p>
+            ESCan est un siteweb intuitif permettant aux personnes sans emploi de trouver d'emploi. Vous recherchez
+            un emploi ? Parcourez les emplois ci-dessous et postuler afin de vus garantir un avenir meilleur
+        </p>
+    </section>
+    <div class="container-md" id="offre">
+        <main class="row gx-5 gy-4">
+            <section class="col-sm-6 col-md-4">
+                <div class="card shadow-lg">
+                    <img src="../Pictures/h6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.
+                        </p>
+                        <button type="button" class="btn btn-primary" id="bouton5" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Postuler
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="col-sm-6 col-md-4">
+                <div class="card shadow-lg">
+                    <img src="../Pictures/w6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SAGS</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.
+                        </p>
+                        <button type="button" class="btn btn-primary" id="bouton1" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Postuler
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="col-sm-6 col-md-4">
+                <div class="card shadow-lg">
+                    <img src="../Pictures/h6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">AGRO-Bénin</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.
+                        </p>
+                        <button type="button" class="btn btn-primary" id="bouton2" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Postuler
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="col-sm-6 col-md-4">
+                <div class="card shadow-lg">
+                    <img src="../Pictures/h4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.
+                        </p>
+                        <button type="button" class="btn btn-primary" id="bouton3" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Postuler
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="col-sm-6 col-md-4">
+                <div class="card shadow-lg">
+                    <img src="../Pictures/h3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.
+                        </p>
+                        <button type="button" class="btn btn-primary" id="bouton4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Postuler
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="col-sm-6 col-md-4">
+                <div class="card shadow-lg">
+                    <img src="../Pictures/h4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.
+                        </p>
+                        <button type="button" class="btn btn-primary" id="bouton6" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Postuler
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- L'extrait suivant pour gérer les modals -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Formulaire de candiadature</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nom" class="col-form-label">Nom :</label>
+                            <input type="text" class="form-control" id="nom" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="prenom" class="col-form-label">Prenom:</label>
+                            <input type="text" class="form-control" id="prenom" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contact" class="col-form-label">Contact :</label>
+                            <input type="number" class="form-control" id="contact" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">Email :</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="niveau" class="col-form-label">Niveau :</label>
+                            <input list="niveaux" class="form-control" id="niveau" required>
+                            <datalist id="niveaux">
+                                <option value="CEP">Certificat d'Etudes Primaire (CEP)</option>
+                                <option value="BEPC">Brevet d'Etudes du Premier Cycle (BEPC)</option>
+                                <option value="BAC">Baccalauréat</option>
+                                <option value="Licence 1">Licence 1</option>
+                                <option value="Licence 2">Licence 2</option>
+                                <option value="Licence 3">Licence 3</option>
+                            </datalist>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" style="background-color: #aaa !important;"
+                                data-bs-dismiss="modal">Fermer</button>
+                            <button type="submit" class="btn ">Soumettre</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-secondary-subtle container-fluid mt-4">
+        <section class="row p-3">
+            <div class="col-md-4 d-flex flex-column justify-content-center">
+                <a class="navbar-brand fs-3 text-white p-2 rounded"
+                    style="background-color: #8825f9; max-width: fit-content;" href="#"><span
+                        class="bg-white p-1 text-black fw-bold rounded">MS</span>Can</a>
+            </div>
+            <div class="col-md-4">
+                <ul>
+                    <li>Premier élément</li>
+                    <li>Deuxième élément</li>
+                    <li>Troisième élément</li>
+                    <li>Quatrième élément</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Commentaires</h3>
+                <div class="d-flex">
+                    <textarea class="form-control me-5" style="height: 15px;"
+                        placeholder="Votre commentaire"></textarea>
+                    <button class="btn btn-outline-success" id="open">Soumettre</button>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script>
+        var btn = document.getElementById('bouton1');
+
+        btn.addEventListener('click', function () {
+            btn.textContent = "Déjà postulé";
+            btn.classList.add("clique");
+            btn.setAttribute('disabled', 'disabled');
+        });
+        var btn2 = document.getElementById('bouton2');
+
+        btn2.addEventListener('click', function () {
+            btn2.textContent = "Déjà postulé";
+            btn2.classList.add("clique");
+            btn2.setAttribute('disabled', 'disabled');
+        });
+        var btn3 = document.getElementById('bouton3');
+        btn3.addEventListener('click', function () {
+            btn3.textContent = "Déjà postulé";
+            btn3.classList.add("clique");
+            btn3.setAttribute('disabled', 'disabled');
+        })
+        var btn4 = document.getElementById('bouton4');
+        btn4.addEventListener('click', function () {
+            btn4.textContent = "Déjà postulé";
+            btn4.classList.add("clique");
+            btn4.setAttribute('disabled', 'disabled');
+        });
+        var btn5 = document.getElementById('bouton5');
+        btn5.addEventListener('click', function () {
+            btn5.textContent = "Déjà postulé";
+            btn5.classList.add("clique");
+            btn5.setAttribute('disabled', 'disabled');
+        });
+        var btn6 = document.getElementById('bouton6');
+        btn6.addEventListener('click', function () {
+            btn6.textContent = "Déjà postulé";
+            btn6.classList.add("clique");
+            btn6.setAttribute('disabled', 'disabled');
+        });
+
+    </script>
+    <script>
+        var btn8 = document.getElementById("open");
+        btn8.addEventListener('click', function () {
+
+            btn8.className = "spinner-border";
+            btn8.role = "status";
+            btn8.textContent = "";
+
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
